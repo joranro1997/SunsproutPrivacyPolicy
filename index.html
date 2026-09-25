@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>Sunsprout - Soporte / Support</title>
+    <style>
+        :root {
+            --cream: #F3F1EA;
+            --paper: #FFFFFF;
+            --ink: #2F3A2C;
+            --muted: #5E6B59;
+            --leaf: #3D7D36;
+            --leaf-soft: #E4EFDD;
+            --sun: #F2C14E;
+            --sun-soft: #FBF1D6;
+            --line: #DCE3D3;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            max-width: 820px;
+            margin: 0 auto;
+            padding: 20px;
+            color: var(--ink);
+            background-color: var(--cream);
+        }
+        .container {
+            background: var(--paper);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(47, 58, 44, 0.08);
+        }
+        header.brand { display: flex; align-items: center; gap: 12px; }
+        .sun {
+            width: 36px; height: 36px; border-radius: 50%;
+            background: var(--sun);
+            box-shadow: 0 0 0 6px var(--sun-soft);
+            flex: none;
+        }
+        h1 {
+            color: var(--leaf);
+            margin: 0;
+            font-size: 1.9rem;
+        }
+        h2 {
+            color: var(--leaf);
+            margin-top: 32px;
+            border-bottom: 2px solid var(--leaf-soft);
+            padding-bottom: 4px;
+        }
+        h3 { color: var(--ink); margin-top: 20px; }
+        a { color: var(--leaf); }
+        a:focus-visible { outline: 3px solid var(--sun); outline-offset: 2px; }
+        .tagline { color: var(--muted); margin-top: 8px; }
+        .last-updated { color: var(--muted); font-style: italic; }
+        .lang { text-align: right; font-size: 0.95rem; margin: 0 0 8px; }
+        .draft {
+            background: var(--sun-soft);
+            border-left: 6px solid var(--sun);
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin: 16px 0 24px;
+        }
+        .contact {
+            background: var(--leaf-soft);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 28px;
+        }
+        ul { padding-left: 22px; }
+        li { margin: 4px 0; }
+        nav.links ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 20px; }
+        footer { color: var(--muted); font-size: 0.9rem; margin-top: 28px; text-align: center; }
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            .container { padding: 22px; }
+            h1 { font-size: 1.6rem; }
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --cream: #1C2119;
+                --paper: #252B22;
+                --ink: #E8EDE3;
+                --muted: #B4BFAE;
+                --leaf: #9CD18F;
+                --leaf-soft: #2F3A2B;
+                --sun-soft: #3A3322;
+                --line: #3A4435;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <header class="brand"><span class="sun" aria-hidden="true"></span><h1>Sunsprout</h1></header>
+        <p class="tagline">Mueve el sol, planta semillas y haz que la vida cubra las ruinas. /
+            Move the sun, plant seeds and let life cover grey ruins.</p>
+
+        <section lang="es">
+        <h2>Soporte</h2>
+        <p>¿Tienes un problema con el juego, una compra que no aparece o quieres borrar tu cuenta? Escríbenos
+            e intentaremos responder en unos días. Si puedes, dinos el modelo de tu móvil, la versión de
+            Sunsprout (Ajustes, abajo del todo) y el número del nivel.</p>
+        <ul>
+            <li><strong>Compras:</strong> si cambias de móvil o reinstalas el juego, toca «Restaurar compras» en
+                Ajustes con la misma cuenta de Apple o de Google con la que compraste. «Quitar anuncios» y los
+                temas vuelven; las gotas de rocío ya gastadas no.</li>
+            <li><strong>Tu jardín:</strong> el progreso se guarda en el propio móvil. Si inicias sesión con
+                Apple o Google (opcional), también se guarda una copia en la nube para recuperarlo en otro
+                dispositivo.</li>
+            <li><strong>Anuncios:</strong> no hay anuncios en los primeros niveles y después solo alguno entre
+                niveles. Con «Quitar anuncios» desaparecen para siempre. Puedes cambiar tus opciones de
+                privacidad de anuncios en Ajustes.</li>
+            <li><strong>Borrar tu cuenta y tus datos:</strong> en el juego, Ajustes → Cuenta → Borrar cuenta.
+                Si ya no tienes el juego, sigue los pasos de <a href="BorrarCuenta.html">esta página</a>.</li>
+        </ul>
+        </section>
+
+        <section lang="en">
+        <h2>Support</h2>
+        <p>Having trouble with the game, a purchase that doesn't show up, or want to delete your account? Write
+            to us and we'll try to reply within a few days. If you can, include your phone model, the Sunsprout
+            version (at the bottom of Settings) and the level number.</p>
+        <ul>
+            <li><strong>Purchases:</strong> if you change phones or reinstall the game, tap "Restore purchases"
+                in Settings, signed in with the same Apple or Google account you bought with. "Remove ads" and
+                themes come back; dewdrops you have already spent don't.</li>
+            <li><strong>Your garden:</strong> progress is saved on your phone. If you sign in with Apple or
+                Google (optional), a copy is also kept in the cloud so you can recover it on another device.</li>
+            <li><strong>Ads:</strong> the first levels have no ads, and after that there's only the occasional
+                ad between levels. "Remove ads" removes them for good. You can change your ad privacy choices in
+                Settings.</li>
+            <li><strong>Deleting your account and data:</strong> in the game, Settings → Account → Delete
+                account. If you no longer have the game, follow the steps on <a href="DeleteAccount.html">this
+                page</a>.</li>
+        </ul>
+        </section>
+
+        <div class="contact">
+            <strong>Email:</strong> <a href="mailto:midwayofdraenor@gmail.com">midwayofdraenor@gmail.com</a>
+        </div>
+
+        <h2>Legal</h2>
+        <nav class="links" aria-label="Legal">
+            <ul>
+                <li><a href="PoliticaDePrivacidad.html" lang="es">Política de privacidad</a></li>
+                <li><a href="PrivacyPolicy.html" lang="en">Privacy policy</a></li>
+                <li><a href="TerminosDelServicio.html" lang="es">Términos del servicio</a></li>
+                <li><a href="TermsOfService.html" lang="en">Terms of service</a></li>
+                <li><a href="BorrarCuenta.html" lang="es">Borrar la cuenta</a></li>
+                <li><a href="DeleteAccount.html" lang="en">Delete your account</a></li>
+            </ul>
+        </nav>
+
+    </main>
+    <footer>Sunsprout · Jorge Andreu Royo</footer>
+</body>
+</html>
